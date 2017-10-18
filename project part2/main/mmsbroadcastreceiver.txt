@@ -1,0 +1,24 @@
+using System;
+using android.content.BroadcastReceiver;
+using android.content.Context;
+using android.content.Intent;
+
+/**
+ * Created by rushd on 25/10/2016.
+ */
+
+namespace com.nqr.smsapp {
+public class MMSBroadcastReceiver extends BroadcastReceiver {
+
+
+
+    
+    public override void onReceive(Context context, Intent intent) {
+
+        throw new System.NotSupportedException("Not yet Supported!");
+
+
+
+    }
+}
+}

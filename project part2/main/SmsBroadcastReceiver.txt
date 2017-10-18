@@ -1,0 +1,49 @@
+using System;
+using android.content.BroadcastReceiver;
+using android.content.Context;
+using android.content.Intent;
+using android.os.Bundle;
+using android.telephony.SmsMessage;
+using android.widget.Toast;
+
+namespace com.nqr.smsapp {
+public class SmsBroadcastReceiver extends BroadcastReceiver {
+
+    public static readonly string SMS_BUNDLE = "pdus";
+
+    public void onReceive(Context context, Intent intent) {
+        Bundle intentExtras = intent.getExtras();
+
+            if (intentExtras != null) {
+            object[] sms = (object[]) intentExtras.get(SMS_BUNDLE);
+            string smsMessageStr = "";
+            for (int i = 0; i < sms.length; ++i) {
+                string format = intentExtras.getString("format");
+                SmsMessage smsMessage = SmsMessage.createFromPdu((byte[]) sms[i], format);
+
+                string smsBody = smsMessage.getMessageBody().ToString();
+                string address = smsMessage.getOriginatingAddress();
+
+
+                    smsMessageStr += "SMS From: " + address + "\n";
+                    smsMessageStr += smsBody + "\n";
+
+            }
+
+
+                Toast.makeText(context, "Message Received!", Toast.LENGTH_SHORT).show();
+
+                if (MainActivity.active) {
+                    MainActivity inst = MainActivity.instance();
+                    inst.updateInbox(smsMessageStr);
+                } else {
+                    Intent i = new Intent(context, MainActivity.class);
+                    i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    context.startActivity(i);
+
+                }
+
+        }
+    }
+}
+}

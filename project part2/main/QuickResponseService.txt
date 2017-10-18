@@ -1,0 +1,27 @@
+using System;
+using android.app.Service;
+using android.content.Intent;
+using android.os.IBinder;
+/**
+ * Created by rushd on 24/10/2016.
+ */
+namespace com.nqr.smsapp {
+public class QuickResponseService extends Service {
+    
+    public override IBinder onBind(Intent arg0) {
+        return null;
+    }
+
+    
+    public override void onDestroy() {
+        super.onDestroy();
+    }
+
+    
+    public override int onStartCommand(Intent intent, int flags, int startID) {
+        return super.onStartCommand(intent,flags,startID);
+
+    }
+
+}
+}
