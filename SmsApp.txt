@@ -1,0 +1,31 @@
+ private void button1_Click(object sender, EventArgs e)
+        {
+            using (System.Net.WebClient client = new System.Net.WebClient())
+            {
+
+                Uri url = new Uri("http://smsc.vianett.no/v3/send.ashx?" +
+                    "src=" + txtPhoneNumber.Text + "&" +
+                    "dst=" + txtPhoneNumber.Text + "&" +
+                    "msg=" + System.Web.HttpUtility.UrlEncode(txtMessage.Text, System.Text.Encoding.GetEncoding("ISO-8859-1")) + "&" +
+                    "username=" + System.Web.HttpUtility.UrlEncode(txtUsername.Text) + "&" +
+                    "password=" + System.Web.HttpUtility.UrlEncode(txtPassword.Text));
+                string result = "";
+                try
+                {
+                    result = client.DownloadString(url);
+                }
+                catch (Exception error)
+                {
+                    MessageBox.Show("Message send failure.details:/n" + error, "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                finally
+                {
+                    MessageBox.Show("Your message has been successfully sent.", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+
+            }
+
+
+        }
+
+    }
