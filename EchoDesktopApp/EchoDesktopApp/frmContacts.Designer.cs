@@ -1,4 +1,6 @@
-﻿namespace EchoDesktopApp
+﻿using System;
+
+namespace EchoDesktopApp
 {
     partial class frmContacts
     {
@@ -39,8 +41,12 @@
             this.exitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listView1 = new System.Windows.Forms.ListView();
+            //<<<<<<< Updated upstream
             this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.showChatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+//=======
+//>>>>>>> Stashed changes
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,6 +57,7 @@
             this.listView1.Size = new System.Drawing.Size(254, 364);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
             // menuStrip1
             // 
@@ -109,19 +116,19 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.exitToolStripMenuItem.Text = "Appointments";
             // 
             // exitToolStripMenuItem1
             // 
             this.exitToolStripMenuItem1.Name = "exitToolStripMenuItem1";
-            this.exitToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem1.Size = new System.Drawing.Size(150, 22);
             this.exitToolStripMenuItem1.Text = "Email";
             // 
             // exitToolStripMenuItem2
             // 
             this.exitToolStripMenuItem2.Name = "exitToolStripMenuItem2";
-            this.exitToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem2.Size = new System.Drawing.Size(150, 22);
             this.exitToolStripMenuItem2.Text = "Exit";
             this.exitToolStripMenuItem2.Click += new System.EventHandler(this.exitToolStripMenuItem2_Click);
             // 
@@ -143,6 +150,12 @@
             this.showChatToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.showChatToolStripMenuItem.Text = "showChat";
             this.showChatToolStripMenuItem.Click += new System.EventHandler(this.showChatToolStripMenuItem_Click);
+            // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Text = "Help";
             // 
             // frmContacts
             // 
@@ -178,5 +191,7 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem showChatToolStripMenuItem;
+
+        public EventHandler showChatToolStripMenuItem_Click { get; private set; }
     }
 }

@@ -8,6 +8,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Net;
+using System.IO;
+using System.Net;
+
 
 namespace EchoDesktopApp
 {
@@ -15,6 +19,7 @@ namespace EchoDesktopApp
     public partial class frmContacts : Form
     {
 
+<<<<<<< Updated upstream
         private string _username = "";
         private string _password = "";
 
@@ -116,6 +121,104 @@ namespace EchoDesktopApp
         private void showChatToolStripMenuItem_Click(object sender, EventArgs e)
         {
             conversation.Show();
+=======
+        public frmContacts()
+        {
+            InitializeComponent();
+
+        }
+
+        public void getCD()
+        {
+            string[] part = new string[100];
+
+            string[] infoN = new string[100];
+            string[] infoS = new string[100];
+            string[] infoC = new string[100];
+
+            string[] partN = new string[100];
+            string[] partS = new string[100];
+            string[] partC = new string[100];
+
+            string[] user_surname = new string[100];
+            string[] user_name = new string[100];
+            string[] cell_num = new string[100];
+            string[] email = new string[100];
+
+            string[] surname = new string[100];
+            string[] uName = new string[100];
+            string[] cellphone = new string[100];
+
+            int cont = 0;
+
+            string uri = "http://echoapi.eu-west-1.elasticbeanstalk.com/api/contacts/test";
+            
+
+            WebClient client = new WebClient();
+            Stream urlData = client.OpenRead(uri);
+            StreamReader reader = new StreamReader(urlData);
+            string s = reader.ReadToEnd();
+
+            while(s != null)
+            {
+                int pc = 0;
+                int first = 0;
+                int second = 69;
+
+                part[pc] = s.Substring(first, second);
+                pc++;
+                first +=  70;
+            }
+
+            while(part != null)
+            {
+                int pc = 0;
+                string[] info = part[pc].Split(',');
+                infoN[pc] = info[0];
+                infoS[pc] = info[1];
+                infoC[pc] = info[2];
+
+
+                partN[pc] = infoN[pc].Substring(16);
+                string name = partN[pc];   
+                user_name = name.Split('"');
+                uName[pc] = user_name[0];
+
+                partS[pc] = infoS[pc].Substring(13);
+                string sur = partS[pc];
+                user_surname = sur.Split('"');
+                surname[pc] = user_surname[0];
+
+                partC[pc] = infoC[pc].Substring(13);
+                string cell = partC[pc];
+                cell_num = cell.Split('"');
+                cellphone[pc] = cell_num[0];
+
+            }
+
+            while(part != null)
+            {
+                MessageBox.Show(part[cont]);
+                cont++;
+            }
+
+            while(s != null)
+            {
+                var item = new ListViewItem(s);
+                listView1.Items.Add(item);
+                
+            }
+
+            
+
+            
+            
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+>>>>>>> Stashed changes
         }
     }
 }

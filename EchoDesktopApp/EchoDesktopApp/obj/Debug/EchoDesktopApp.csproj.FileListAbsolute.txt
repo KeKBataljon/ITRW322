@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 C:\Users\Edwin\Desktop\Development\GitHub\echo\echo\EchoDesktopApp\EchoDesktopApp\bin\Debug\EchoDesktopApp.exe.config
 C:\Users\Edwin\Desktop\Development\GitHub\echo\echo\EchoDesktopApp\EchoDesktopApp\bin\Debug\EchoDesktopApp.exe
 C:\Users\Edwin\Desktop\Development\GitHub\echo\echo\EchoDesktopApp\EchoDesktopApp\bin\Debug\EchoDesktopApp.pdb
@@ -60,3 +61,36 @@ C:\Users\Edwin\Desktop\Development\GitHub\echo\echo\EchoDesktopApp\EchoDesktopAp
 C:\Users\Edwin\Desktop\Development\GitHub\echo\echo\EchoDesktopApp\EchoDesktopApp\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Edwin\Desktop\Development\GitHub\echo\echo\EchoDesktopApp\EchoDesktopApp\bin\Debug\Microsoft.AspNet.Identity.Core.xml
 C:\Users\Edwin\Desktop\Development\GitHub\echo\echo\EchoDesktopApp\EchoDesktopApp\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+=======
+C:\Users\August\Desktop\322\echo\EchoDesktopApp\EchoDesktopApp\bin\Debug\EchoDesktopApp.exe.config
+C:\Users\August\Desktop\322\echo\EchoDesktopApp\EchoDesktopApp\bin\Debug\EchoDesktopApp.exe
+C:\Users\August\Desktop\322\echo\EchoDesktopApp\EchoDesktopApp\bin\Debug\EchoDesktopApp.pdb
+C:\Users\August\Desktop\322\echo\EchoDesktopApp\EchoDesktopApp\obj\Debug\EchoDesktopApp.csprojResolveAssemblyReference.cache
+C:\Users\August\Desktop\322\echo\EchoDesktopApp\EchoDesktopApp\obj\Debug\EchoDesktopApp.frmLogin.resources
+C:\Users\August\Desktop\322\echo\EchoDesktopApp\EchoDesktopApp\obj\Debug\EchoDesktopApp.frmContacts.resources
+C:\Users\August\Desktop\322\echo\EchoDesktopApp\EchoDesktopApp\obj\Debug\EchoDesktopApp.frmConversation.resources
+C:\Users\August\Desktop\322\echo\EchoDesktopApp\EchoDesktopApp\obj\Debug\EchoDesktopApp.frmRegister.resources
+C:\Users\August\Desktop\322\echo\EchoDesktopApp\EchoDesktopApp\obj\Debug\EchoDesktopApp.Properties.Resources.resources
+C:\Users\August\Desktop\322\echo\EchoDesktopApp\EchoDesktopApp\obj\Debug\EchoDesktopApp.csproj.GenerateResource.Cache
+C:\Users\August\Desktop\322\echo\EchoDesktopApp\EchoDesktopApp\obj\Debug\EchoDesktopApp.exe
+C:\Users\August\Desktop\322\echo\EchoDesktopApp\EchoDesktopApp\obj\Debug\EchoDesktopApp.pdb
+>>>>>>> Stashed changes
+C:\Users\August\Desktop\322\echo\EchoDesktopApp\EchoDesktopApp\obj\Debug\EchoDesktopApp.frmSettings.resources
+C:\Users\August\Desktop\322\echo\EchoDesktopApp\EchoDesktopApp\bin\Debug\AWSSDK.CognitoIdentityProvider.dll
+C:\Users\August\Desktop\322\echo\EchoDesktopApp\EchoDesktopApp\bin\Debug\AWSSDK.Core.dll
+C:\Users\August\Desktop\322\echo\EchoDesktopApp\EchoDesktopApp\bin\Debug\AWSSDK.S3.dll
+C:\Users\August\Desktop\322\echo\EchoDesktopApp\EchoDesktopApp\bin\Debug\EntityFramework.dll
+C:\Users\August\Desktop\322\echo\EchoDesktopApp\EchoDesktopApp\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\August\Desktop\322\echo\EchoDesktopApp\EchoDesktopApp\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\August\Desktop\322\echo\EchoDesktopApp\EchoDesktopApp\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\August\Desktop\322\echo\EchoDesktopApp\EchoDesktopApp\bin\Debug\MySql.Data.dll
+C:\Users\August\Desktop\322\echo\EchoDesktopApp\EchoDesktopApp\bin\Debug\AWSSDK.CognitoIdentityProvider.pdb
+C:\Users\August\Desktop\322\echo\EchoDesktopApp\EchoDesktopApp\bin\Debug\AWSSDK.CognitoIdentityProvider.xml
+C:\Users\August\Desktop\322\echo\EchoDesktopApp\EchoDesktopApp\bin\Debug\AWSSDK.Core.pdb
+C:\Users\August\Desktop\322\echo\EchoDesktopApp\EchoDesktopApp\bin\Debug\AWSSDK.Core.xml
+C:\Users\August\Desktop\322\echo\EchoDesktopApp\EchoDesktopApp\bin\Debug\AWSSDK.S3.pdb
+C:\Users\August\Desktop\322\echo\EchoDesktopApp\EchoDesktopApp\bin\Debug\AWSSDK.S3.xml
+C:\Users\August\Desktop\322\echo\EchoDesktopApp\EchoDesktopApp\bin\Debug\EntityFramework.xml
+C:\Users\August\Desktop\322\echo\EchoDesktopApp\EchoDesktopApp\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\August\Desktop\322\echo\EchoDesktopApp\EchoDesktopApp\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\August\Desktop\322\echo\EchoDesktopApp\EchoDesktopApp\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
