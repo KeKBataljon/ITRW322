@@ -31,11 +31,16 @@
             this.listView1 = new System.Windows.Forms.ListView();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.echoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addFriendToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.showChatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,12 +67,44 @@
             // echoToolStripMenuItem
             // 
             this.echoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.addFriendToolStripMenuItem,
             this.exitToolStripMenuItem,
             this.exitToolStripMenuItem1,
             this.exitToolStripMenuItem2});
             this.echoToolStripMenuItem.Name = "echoToolStripMenuItem";
             this.echoToolStripMenuItem.Size = new System.Drawing.Size(45, 20);
             this.echoToolStripMenuItem.Text = "Echo";
+            // 
+            // addFriendToolStripMenuItem
+            // 
+            this.addFriendToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripTextBox1,
+            this.toolStripMenuItem1,
+            this.toolStripMenuItem2,
+            this.showChatToolStripMenuItem});
+            this.addFriendToolStripMenuItem.Name = "addFriendToolStripMenuItem";
+            this.addFriendToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.addFriendToolStripMenuItem.Text = "Add Friend";
+            // 
+            // toolStripTextBox1
+            // 
+            this.toolStripTextBox1.Name = "toolStripTextBox1";
+            this.toolStripTextBox1.Size = new System.Drawing.Size(100, 23);
+            this.toolStripTextBox1.Leave += new System.EventHandler(this.toolStripTextBox1_Leave);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(160, 22);
+            this.toolStripMenuItem1.Text = "add";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(160, 22);
+            this.toolStripMenuItem2.Text = "remove";
+            this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
             // exitToolStripMenuItem
             // 
@@ -86,6 +123,7 @@
             this.exitToolStripMenuItem2.Name = "exitToolStripMenuItem2";
             this.exitToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
             this.exitToolStripMenuItem2.Text = "Exit";
+            this.exitToolStripMenuItem2.Click += new System.EventHandler(this.exitToolStripMenuItem2_Click);
             // 
             // helpToolStripMenuItem
             // 
@@ -99,6 +137,13 @@
             this.settingsToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.settingsToolStripMenuItem.Text = "Settings";
             // 
+            // showChatToolStripMenuItem
+            // 
+            this.showChatToolStripMenuItem.Name = "showChatToolStripMenuItem";
+            this.showChatToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.showChatToolStripMenuItem.Text = "showChat";
+            this.showChatToolStripMenuItem.Click += new System.EventHandler(this.showChatToolStripMenuItem_Click);
+            // 
             // frmContacts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -110,6 +155,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmContacts";
             this.Text = "frmContacts";
+            this.Load += new System.EventHandler(this.frmContacts_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -127,5 +173,10 @@
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addFriendToolStripMenuItem;
+        private System.Windows.Forms.ToolStripTextBox toolStripTextBox1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem showChatToolStripMenuItem;
     }
 }
