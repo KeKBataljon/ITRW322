@@ -1,0 +1,12 @@
+c:\users\august\documents\visual studio 2015\Projects\ChatApp\ChatApp\bin\Debug\ChatApp.exe.config
+c:\users\august\documents\visual studio 2015\Projects\ChatApp\ChatApp\obj\Debug\ChatApp.csprojResolveAssemblyReference.cache
+c:\users\august\documents\visual studio 2015\Projects\ChatApp\ChatApp\obj\Debug\ChatApp.Form1.resources
+c:\users\august\documents\visual studio 2015\Projects\ChatApp\ChatApp\obj\Debug\ChatApp.Properties.Resources.resources
+c:\users\august\documents\visual studio 2015\Projects\ChatApp\ChatApp\obj\Debug\ChatApp.csproj.GenerateResource.Cache
+c:\users\august\documents\visual studio 2015\Projects\ChatApp\ChatApp\bin\Debug\ChatApp.exe
+c:\users\august\documents\visual studio 2015\Projects\ChatApp\ChatApp\bin\Debug\ChatApp.pdb
+c:\users\august\documents\visual studio 2015\Projects\ChatApp\ChatApp\obj\Debug\ChatApp.exe
+c:\users\august\documents\visual studio 2015\Projects\ChatApp\ChatApp\obj\Debug\ChatApp.pdb
+C:\Users\August\Desktop\Share\ChatApp\ChatApp\bin\Debug\ChatApp.exe.config
+C:\Users\August\Desktop\Share\ChatApp\ChatApp\obj\Debug\ChatApp.exe
+C:\Users\August\Desktop\Share\ChatApp\ChatApp\obj\Debug\ChatApp.pdb
